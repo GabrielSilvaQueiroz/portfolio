@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    height: 100vh;
+    font-size: 14px;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.degrade {
+    background: linear-gradient(-45deg, #112B43, #146DB4);
+    background-size: 500% 500%;
+    animation: change 3.8s ease-in-out infinite
+}
+
+#text {
+    margin-top: 5px;
+}
+
+#title {
+    margin-top: 5px;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* ESTILO DO HEADER */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 175px;
+    /* Reduz o tamanho da imagem para 100px */
+    height: 175px;
+    /* Define a altura da imagem como 100px */
+    margin-bottom: 20px;
+    border-radius: 50%;
+    /* Define a borda como um círculo perfeito */
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #5e5e5e;
+    font-weight: 300;
+}
+
+/* ESTILO DOS BOTÕES */
+
+section.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.botoes-links a:hover {
+    opacity: 0.8;
+}
+
+a.link button {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+a.link i {
+    font-size: 1.5em;
+}
+
+a.link button:hover,
+footer a.btn-footer:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+/* ESTILO DO FOOTER */
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
+footer a.btn-footer {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+}
